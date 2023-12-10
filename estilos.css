@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Lora&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f5f2f8;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Afacad;
+}
+
+.logo-container img {
+    width: 25%; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    margin-left: 25px;
+    border-radius: 65px;
+}
+
+.social-icons {
+    display: flex;
+    position: absolute;
+    margin-right: 25px;
+    top: 80px; /* Ajusta la posición verticalmente */
+    right: 15px; /* Ajusta la posición horizontalmente */
+    transform: translateY(-50%); /* Centra verticalmente */
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.face {
+    width: 24px; /* Ancho de los iconos */
+    height: 24px;
+}
+
+.inst {
+    width: 24px; /* Ancho de los iconos */
+    height: 24px;
+}
+
+nav {
+    font-size: 10px;
+    font-family: Afacad;
+    margin-top: 5px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 40px;
+    margin-right: 130px;
+    padding: 10px;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container img {
+        justify-content: center;
+    }
+
+    .social-icons {
+        position: static; /* Restablecer la posición para pantallas pequeñas */
+        margin-top: -30px;
+        display: flex;
+        position: absolute;
+        margin-right: 25px;
+        top: 80px; /* Ajusta la posición verticalmente */
+        right: 15px; /* Ajusta la posición horizontalmente */
+        transform: translateY(-50%); /* Centra verticalmente */
+    }
+
+    nav {
+        margin-top: -40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
