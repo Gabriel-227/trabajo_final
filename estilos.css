@@ -72,6 +72,58 @@ nav a {
     font-size: 16px;
 }
 
+.yoga {
+    font-family: afacad;
+    font-size: 25px;
+    justify-content: center; 
+
+} 
+
+footer {
+    background-color: #f5f2f8; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color del texto según tu diseño */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.footlogo-container {
+    display: none;
+}
+
+.footlogo-container img {
+    width: 25%; /* Ajusta el tamaño máximo del logo según tus necesidades */
+    margin-left: 25px;
+    border-radius: 65px;
+}
+
+.slogan {
+    color: #000;
+    font-family: Afacad;
+    font-size: 35px;
+}
+
+.contact-info, .social-icons {
+    text-align: inherit;
+    color: #000;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.footersocial-icons {
+    color: #000;
+    margin-top: -5px;
+}
+    
+
+.footersocial-icons img {
+    width: 25px; /* Ajusta el tamaño de los íconos sociales según tus necesidades */
+    margin: 10px; /* Añade un espacio entre los íconos sociales */
+}
+
+
 /* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
     header {
@@ -79,7 +131,10 @@ nav a {
         align-items: flex-start;
     }
 
-    .logo-container img {
+    .footlogo-container img {
+        margin-left: -5px;
+        max-width: 25%;
+        border-radius: 65%;
         justify-content: center;
     }
 
@@ -105,5 +160,22 @@ nav a {
     nav li {
         margin-left: 10px;
         margin-bottom: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container img {
+        margin-bottom: 20px;
+    }
+
+    .contact-info .footersocial-icons {
+        margin: 10px; 
+    }
+
+    .slogan {
+        display: none;
     }
 }
