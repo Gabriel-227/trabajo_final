@@ -109,6 +109,17 @@ section {
     font-family: Afacad;
     font-size: 30px;
     text-align: center;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar cambios */
+}
+
+#productos:hover {
+    transform: scale(1.1); /* Hace que el título aumente de tamaño al pasar el mouse sobre él */
+}
+
+#productos::before {
+    content: '\1F6D2'; /* Unicode para un icono de carrito de compras */
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .cuadricula {
@@ -262,5 +273,5 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
     justify-content: center;
-}
+    }
 }
