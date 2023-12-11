@@ -46,15 +46,13 @@ header {
 }
 
 nav {
-    font-size: 10px;
+    font-size: 25px;
     font-family: Afacad;
-    margin-top: 5px;
-    
 }
 
 nav ul {
     list-style-type: none;
-    margin: 40px;
+    margin: 10px;
     margin-right: 130px;
     padding: 10px;
     display: flex;
@@ -72,12 +70,39 @@ nav a {
     font-size: 16px;
 }
 
-.yoga {
-    font-family: afacad;
-    font-size: 25px;
-    justify-content: center; 
+section {
+    text-align: center;
+}
 
-} 
+.yoga {
+    font-family: Afacad;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin-right: 15px;
+    font-family: Afacad;
+    display: flex;
+    align-items: center;
+    justify-content: inherit;
+}
+
+.poseyoga {
+    margin: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgyoga {
+    max-width: 100%;
+}
+
+.activa {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
 
 footer {
     background-color: #f5f2f8; /* Cambia el color de fondo según tu diseño */
@@ -103,6 +128,12 @@ footer {
     color: #000;
     font-family: Afacad;
     font-size: 35px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slogan:hover {
+    color: #7D6A86; /* Cambia el color al pasar el mouse sobre el texto */
+    transform: scale(1.1); /* Aplica un aumento de escala al pasar el mouse sobre el texto */
 }
 
 .contact-info, .social-icons {
@@ -116,13 +147,11 @@ footer {
     color: #000;
     margin-top: -5px;
 }
-    
 
 .footersocial-icons img {
     width: 25px; /* Ajusta el tamaño de los íconos sociales según tus necesidades */
     margin: 10px; /* Añade un espacio entre los íconos sociales */
 }
-
 
 /* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
@@ -177,5 +206,28 @@ footer {
 
     .slogan {
         display: none;
+    }
+
+    .content {
+    margin-right: 15px;
+    font-family: Afacad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .poseyoga {
+    margin-top: 20px;
+    max-width: 90%;
+    }
+
+    .imgyoga {
+    height: auto;
+    width: 90%;
+    }
+
+    .activa {
+        max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más grandes */
     }
 }
