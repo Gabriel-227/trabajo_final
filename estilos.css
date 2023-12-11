@@ -85,10 +85,11 @@ section {
     font-family: Afacad;
     display: flex;
     align-items: center;
-    justify-content: inherit;
+    justify-content: normal;
 }
 
 .poseyoga {
+    font-size: 20px;
     margin: 25px;
     max-width: 100%;
     height: auto;
@@ -99,9 +100,34 @@ section {
 }
 
 .activa {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
+}
+
+#productos {
+    font-family: Afacad;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cuadricula {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    justify-content: center;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 footer {
@@ -230,4 +256,11 @@ footer {
     .activa {
         max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más grandes */
     }
+
+    .cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    justify-content: center;
+}
 }
