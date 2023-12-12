@@ -306,6 +306,12 @@ footer {
         display: none;
     }
 
+    .footlogo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .content {
         margin-right: 15px;
         font-family: Afacad;
