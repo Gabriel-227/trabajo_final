@@ -189,6 +189,18 @@ img.imgyoga {
     justify-content: center;
     height: 90vh;
 }
+
+.horario-hipo img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.horario-hipo {
+    display: flex;
+    lign-items: center;
+    justify-content: center;
+}
  
 footer {
     background-color: #f5f2f8; /* Cambia el color de fondo según tu diseño */
