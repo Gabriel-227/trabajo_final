@@ -61,6 +61,16 @@ nav ul {
 nav li {
     margin-right: 20px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar cambios */
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Hace que el título aumente de tamaño al pasar el mouse sobre él */
+}
+
+nav li::before {
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 nav a {
@@ -75,12 +85,15 @@ section {
 }
 
 .yoga {
+    color: #7d6a86;
     font-family: Afacad;
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .content {
+    background-color: #f5f2f8;
     margin-right: 15px;
     font-family: Afacad;
     display: flex;
@@ -95,14 +108,31 @@ section {
     height: auto;
 }
 
-.imgyoga {
-    max-width: 100%;
+img.imgyoga {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .activa {
     max-width: 50%;
     height: auto;
     border-radius: 10px;
+}
+
+.enlace-maternidad {
+    display: block; /* Para que el enlace ocupe todo el ancho disponible */
+    text-align: center; /* Para centrar el texto */
+    margin-top: 10px; /* Ajusta el margen según sea necesario */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    padding: 8px 16px; /* Ajusta el relleno según sea necesario */
+    background-color: #d87a70; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.enlace-maternidad:hover {
+    background-color: #dc4635; /* Cambia el color de fondo al pasar el mouse */
 }
 
 #productos {
@@ -141,6 +171,25 @@ section {
     border-radius: 8px;
 }
 
+.terapeutico {
+    font-family: Afacad;
+    font-size: 30px;
+    text-align: center;
+}
+
+.terap-horarios img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.terap-horarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+ 
 footer {
     background-color: #f5f2f8; /* Cambia el color de fondo según tu diseño */
     color: #fff; /* Cambia el color del texto según tu diseño */
@@ -246,22 +295,21 @@ footer {
     }
 
     .content {
-    margin-right: 15px;
-    font-family: Afacad;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        margin-right: 15px;
+        font-family: Afacad;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .poseyoga {
-    margin-top: 20px;
-    max-width: 90%;
+        margin-top: 20px;
+        max-width: 90%;
     }
 
     .imgyoga {
-    height: auto;
-    width: 90%;
+        min-width: 90%;
     }
 
     .activa {
@@ -269,9 +317,19 @@ footer {
     }
 
     .cuadricula {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .terap-horarios img {
+        margin-top: -75%;
+        height: auto;
+        max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    }
+    .ter-slog .slogan {
+        display: flex;
+        margin-top: -75%;
     }
 }
