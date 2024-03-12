@@ -203,6 +203,7 @@ img.imgyoga {
 }
  
 footer {
+    font-family: Afacad;
     background-color: #f5f2f8; /* Cambia el color de fondo según tu diseño */
     color: #fff; /* Cambia el color del texto según tu diseño */
     padding: 20px;
@@ -214,12 +215,6 @@ footer {
 
 .footlogo-container {
     display: none;
-}
-
-.footlogo-container img {
-    width: 25%; /* Ajusta el tamaño máximo del logo según tus necesidades */
-    margin-left: 25px;
-    border-radius: 65px;
 }
 
 .slogan {
@@ -239,6 +234,14 @@ footer {
     color: #000;
     margin: 5px;
     margin-bottom: 5px;
+}
+
+.contact-info {
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave para el efecto de movimiento */
+}
+
+.contact-info:hover {
+    transform: translateY(-5px); /* Mueve el elemento hacia arriba (-5px) al pasar el mouse sobre él */
 }
 
 .footersocial-icons {
